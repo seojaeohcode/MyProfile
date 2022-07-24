@@ -251,7 +251,6 @@ footer {
         float: left;
         width: 100%;
     }
-
     #introsection{
         max-width: 34rem;
         margin: 0 auto;
@@ -273,7 +272,6 @@ footer {
 
     #myprojectsection {
         width: 100%;
-        margin-top: 0rem;
         margin: 0 auto;
     }
     #myprojectsection::after{
@@ -289,6 +287,7 @@ footer {
     .row{
         width: 94rem;
         margin: 0 auto;
+        padding-left: 2rem;
     }
     .row .item{
         width: 43rem;
@@ -310,6 +309,9 @@ footer {
         /* text-shadow: 
         0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
         0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+    }
+    .row:nth-child(1){
+        margin-top: 1rem;
     }
 
     /*footer*/
