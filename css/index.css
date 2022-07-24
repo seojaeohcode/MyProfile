@@ -14,161 +14,178 @@ body {
     background-repeat: no-repeat;
 }
 
+/* 최상위 */
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 90%;
+    /* 중앙정렬 */
+    margin: 0 auto;
+}
+
+a:link,
+:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* 색상 */
+.skyblue {
+    background: rgb(130, 207, 252);
+}
+
+.black {
+    background: black;
+}
+
+/* header */
+
+
+
+
+/* main */
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#introsection {
+    margin: 0 auto;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, .5);
+    /* 둥근 정도는 반응형이 아니니까 px로 조정 */
+    border-radius: 15px;
+    /* 내부박스는 안으로 들어오게 */
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+#profile {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    border: 2px solid rgb(203, 147, 255);
+
+    background-image: url('../asset/profile/sparta.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+
+#introsection .card p {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.coretext {
+    background-color: rgb(255, 231, 94);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+#introsection .card img {
+    width: 2.5rem;
+    vertical-align: middle;
+}
+
+#introsection .card span:last-child {
+    font-size: 2.4rem;
+    vertical-align: middle;
+}
+
+#myprojectsection {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.imagesection {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagesection img {
+    width: 100%;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    opacity: 0%;
+    transition: 1s linear;
+}
+
+.textsection{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textsection p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff; text-shadow: /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, /* Green glow */ 0 0 42px orange, 0 0 82px orange, 0 0 92px orange, 0 0 102px orange, 0 0 151px orange;
+    /* text-shadow: 
+    0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
+    0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+}
+
+.mask:hover{
+    opacity: 100%;
+}
+
+/* footer */
+footer {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 /* 모바일 보통 320px부터 체크*/
 @media (max-width:767px) {
 
-    /* 최상위 */
-    #wrap {
-        width: 100%;
-        height: 100%;
-    }
-
-    #container {
-        width: 90%;
-        /* 중앙정렬 */
-        margin: 0 auto;
-    }
-
-    a:link,
-    :visited {
-        color: black;
-        text-decoration: none;
-    }
-
-    /* 색상 */
-    .skyblue {
-        background: rgb(130, 207, 252);
-    }
-
-    .black {
-        background: black;
-    }
-
-    /* header */
-
-    /* main */
-    main {
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 5rem;
-    }
-
-    #introsection {
-        /* 왜 마진을 0으로 해도 먹질 않는지 파악해야함. */
-        margin: 0 auto;
-    }
-
-    .item {
-        background-color: rgba(255, 255, 255, .5);
-        /* 둥근 정도는 반응형이 아니니까 px로 조정 */
-        border-radius: 15px;
-        /* 내부박스는 안으로 들어오게 */
-        padding: 1.5rem;
-        margin: 1.5rem;
-    }
-
-    .card {
-        background: white;
-        border-radius: 15px;
-        padding: 1rem;
-    }
-
-    #profile {
-        width: 12rem;
-        height: 12rem;
-        border-radius: 100%;
-        border: 2px solid rgb(203, 147, 255);
-
-        background-image: url('../asset/profile/sparta.png');
-        background-position: center;
-        background-size: cover;
+    /*메인 푸터 대제목*/
+    .left p:first-child{
+        font-size: 3rem;
+        font-weight: 700;
         margin-bottom: 1.5rem;
     }
-
-    #introsection .card p {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-left: 1rem;
-    }
-
-    .coretext {
-        background-color: rgb(255, 231, 94);
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    .card img {
-        width: 2.5rem;
-        vertical-align: middle;
-    }
-
-    .card span:last-child {
-        font-size: 2.4rem;
-        vertical-align: middle;
-    }
-
-    #myprojectsection {
-        margin: 0 auto;
-        margin-top: 1.5rem;
-    }
-
-    #myprojectsection p {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    /* .imagesection{
-        background: rgb(0, 145, 255);
-        border-radius: 10px;
-    } */
-
-    .imagesection {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .imagesection img {
-        width: 100%;
-    }
-
+    
     #myprojectsection>p {
         font-size: 3rem;
         font-weight: 700;
-        margin-left: 1rem;
     }
 
-    /* #myprojectsection a .item .card .hovertext p:first-child{
+    .textsection p {
         font-size: 1.8rem;
-        font-weight: 600;
-    } */
-
-    #myprojectsection a .item .card .hovertext {
-        position: absolute;
-        overflow: hidden;
-        transform: translateY(-100%);
-        /* background-color: rgba(240, 237, 204, .3); */
+        font-weight: 700;
+        color: #fff; text-shadow: /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, /* Green glow */ 0 0 42px orange, 0 0 82px orange, 0 0 92px orange, 0 0 102px orange, 0 0 151px orange;
+        /* text-shadow: 
+        0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
+        0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
     }
 
-    #myprojectsection a .item .card .hovertext p {
-        position: relative;
-        text-align: center;
-        top: 35%;
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 1);
-        transition: all 0.3s linear;
-    }
-
-    a:hover .card .hovertext p{
-        color: rgba(255, 255, 255, 1);
-    }
-    /* footer */
-    footer {
-        margin: 0 auto;
-        text-align: center;
-    }
-
+    /*footer*/
     footer img {
         width: 1.5rem;
         vertical-align: middle;
@@ -182,7 +199,115 @@ body {
 }
 
 /* 태블릿 */
-@media (min-width:768px) and (max-width:1024px) {}
+@media (min-width:768px) and (max-width:1024px) {
+
+    /*메인 푸터 대제목*/
+    .left p:first-child{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    #myprojectsection>p {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    .textsection p {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #fff; text-shadow: /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, /* Green glow */ 0 0 42px orange, 0 0 82px orange, 0 0 92px orange, 0 0 102px orange, 0 0 151px orange;
+        /* text-shadow: 
+        0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
+        0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+    }
+
+    /*footer*/
+    footer img {
+        width: 2.5rem;
+        vertical-align: middle;
+    }
+
+    footer span {
+        font-size: 2.2rem;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}
 
 /* PC */
-@media (min-width:1025px) {}
+@media (min-width:1025px) {
+    
+    .left {
+        width:50%;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .right {
+        width:50%;
+        margin: 0 auto;
+        margin-top: 0;
+        float: right;
+    }
+
+    /*메인 푸터 대제목*/
+    #myprojectsection {
+        margin: 0 auto;
+        margin-top: 0rem;
+    }
+
+    .left p:first-child{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    
+    #myprojectsection>p {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .left .item{
+        float: left;
+        width: 80%;
+    }
+    .right .item {
+        width: 35%;
+        height: 15rem;
+        float: left;
+        background-color: rgba(255, 255, 255, .5);
+        /* 둥근 정도는 반응형이 아니니까 px로 조정 */
+        border-radius: 15px;
+        /* 내부박스는 안으로 들어오게 */
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .textsection p {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff; text-shadow: /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, /* Green glow */ 0 0 42px orange, 0 0 82px orange, 0 0 92px orange, 0 0 102px orange, 0 0 151px orange;
+        /* text-shadow: 
+        0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
+        0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+    }
+
+    /*footer*/
+    footer {
+        bottom: 0;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    footer img {
+        width: 1.5rem;
+        vertical-align: middle;
+    }
+
+    footer span {
+        font-size: 1.2rem;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}
