@@ -183,7 +183,9 @@ footer {
         0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
         0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
     }
-
+    #bookText{
+        font-size: 3rem;
+    }
     /*footer*/
     footer img {
         width: 1.5rem;
@@ -220,6 +222,9 @@ footer {
         /* text-shadow: 
         0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
         0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+    }
+    #bookText{
+        font-size: 6rem;
     }
 
     /*footer*/
@@ -264,6 +269,11 @@ footer {
         /* text-shadow: 
         0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 
         0 0 24px yellow, 0 0 41px yellow, 0 0 46px yellow, 0 0 51px yellow, 0 0 75px yellow; */
+    }
+    #bookText{
+        font-size: 6rem;
+        font-weight: 700;
+        color: #fff; text-shadow: /* White glow */ 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff, /* Green glow */ 0 0 42px orange, 0 0 82px orange, 0 0 92px orange, 0 0 102px orange, 0 0 151px orange;
     }
     #myprojectsection .item{
         max-width: 40rem;
